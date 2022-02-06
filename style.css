@@ -13,42 +13,47 @@ body {
 /* Add styles here! */
 
 .max-width-wrapper {
-  padding: 48px 32px;
-  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 96px 0;
 }
 
 .intro-chunk {
   margin: 0 auto;
   width: 50%;
-  max-width: 600px;
-  padding: 0 24px;
+  padding: 96px 0 48px;
+  max-width: 400px;
 }
 
 .intro-chunk strong {
   color: hsl(160deg, 100%, 30%);
 }
 
-.title {
+.intro-chunk .title {
   font-size: 2rem;
+  margin-bottom: 48px;
 }
 
-section.max-width-wrapper {
-  background-color: hsl(0deg, 0%, 60%);
-  border-top: 8px solid hsl(0deg, 0%, 40%);
-  height: 60%;
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
 .card {
   background-color: white;
   border-bottom: 8px solid hsl(0deg, 0%, 40%);
-  width: 50%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2px 24px;
+  width: fit-content;
+  margin: -24px;
+  padding: 24px;
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .indented-heading {
@@ -56,6 +61,7 @@ section.max-width-wrapper {
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
   padding: 16px 24px;
   margin-left: -32px;
-
+  margin-top: -16px;
   font-size: 1.5rem;
+  width: fit-content;
 }
